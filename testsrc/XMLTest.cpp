@@ -15,16 +15,19 @@ TEST(XMLReaderTest, SimpleTest){
 
     //reads the next XML entitiy created by the reader
     SXMLEntity entity;
-    bool ok = reader.ReadEntity(entity);
-
-    ASSERT_TRUE(ok);
+    ASSERT_TRUE(reader.ReadEntity(entity));
 
     //expecting the entitiy to be of a CompleteElement type from the enum EType
-    EXPECT_EQ(SXMLEntity::EType::CompleteElement, entity.DType);
+    EXPECT_EQ(SXMLEntity::EType::StartElement, entity.DType);
     EXPECT_EQ("a", entity.DNameData);
 
-    //no attribute w the a tag
-    EXPECT_TRUE(entity.DAttributes.empty());
+
+    //need to do it for the closing tag
+    SXMLEntity entity2;
+    ASSERT_TRUE(reader.ReadEntity(entity2));
+
+    EXPECT_EQ(SXMLEntity::EType::EndElement, entity2.DType);
+    EXPECT_EQ("a", entity2.DNameData);
 
     //after reading all XML entities there should be no more XML stuff
     EXPECT_TRUE(reader.End());
