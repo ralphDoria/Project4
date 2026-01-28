@@ -4,8 +4,31 @@
 
 struct CXMLReader::SImplementation{
 
+    std::shared_ptr<CDataSource> DSource; //do various actions(tell if done, give chars, read parts of XML), the input
+    XML_Parser DParser = nullptr; // expat parser instance
+
+    std::queue<SXMLEntity> DQueue;//when the parser reads a tag or text of XML, it wants to remember it to make sure it ends later, so it goes in the queue and gets checks later, and the items stack up for nested XML functions
+
+    bool DDone = false; //bool to check for End()
+    bool DFailed = false; //bool to check for error
+
 
     static void ExpatStartElement(void *data, const XML_Char *name, const XML_Char **attrs){
+        /*
+            we want this function to read the first starting tag
+            it should set the type to StartElement from the EType enum
+            make sure it knows the name of the type of tag
+            add the correct attributes
+            and add the tag to the queue to check for an ending later if needed
+        */
+
+       
+
+
+
+
+
+
 
     }
 
