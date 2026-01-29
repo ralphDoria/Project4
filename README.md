@@ -2,7 +2,7 @@
 
 
 ## Project Status
-This the current status of the project is not done.
+This the current status of the project is done.
 
 ## Code References
 * link expat to makefile -https://github.com/libexpat/libexpat/blob/master/expat/README.md
