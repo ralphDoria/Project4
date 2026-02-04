@@ -1,0 +1,732 @@
+<bussystem>
+    <stops>
+        <stop id="22000" node="95712762" description="Hutchison Dr &amp; Old Davis Road (EB)" />
+        <stop id="22001" node="95712762" description="Hutchison Drive &amp; Old Davis Road (WB)" />
+        <stop id="22002" node="95717425" description="1st St &amp; C St (EB)" />
+        <stop id="22003" node="95717604" description="1st St &amp; D St (WB)" />
+        <stop id="22004" node="95719227" description="Richards Blvd &amp; Olive Dr (SB)" />
+        <stop id="22005" node="2584424865" description="2nd St &amp; B St (EB)" />
+        <stop id="22006" node="95717425" description="C St &amp; 1st St (SB)" />
+        <stop id="22007" node="5674148946" description="2nd St &amp; E St (EB)" />
+        <stop id="22009" node="5274411946" description="2nd St &amp; E St (WB)" />
+        <stop id="22011" node="575319453" description="H St &amp; Amtrak Station (NB)" />
+        <stop id="22012" node="5674148800" description="H St Alley &amp; 2nd St (SB)" />
+        <stop id="22013" node="95713485" description="B St &amp; 4th St (NB)" />
+        <stop id="22014" node="95713485" description="B St &amp; 4th St (SB)" />
+        <stop id="22015" node="95711355" description="3rd St &amp; C St (WB)" />
+        <stop id="22016" node="95711355" description="3rd St &amp; C St (EB)" />
+        <stop id="22017" node="5674148942" description="3rd St &amp; E St (WB)" />
+        <stop id="22018" node="5674148941" />
+        <stop id="22019" node="573919278" />
+        <stop id="22020" node="95718594" />
+        <stop id="22021" node="95714499" description="Russell Blvd &amp; A St (WB)" />
+        <stop id="22022" node="95713487" description="B St &amp; 5th St (NB)" />
+        <stop id="22023" node="95713321" description="B St &amp; 7th St (SB)" />
+        <stop id="22024" node="95713321" description="B St &amp; 7th St (NB)" />
+        <stop id="22025" node="5674148934" description="5th St &amp; D St (EB)" />
+        <stop id="22026" node="5674148933" description="5th St &amp; D St (WB)" />
+        <stop id="22027" node="95709829" description="F St &amp; 6th Street (NB)" />
+        <stop id="22028" node="498524158" description="5th St &amp; G St (EB)" />
+        <stop id="22029" node="498524166" description="5th St &amp; I St (WB)" />
+        <stop id="22030" node="95711362" description="3rd St &amp; K St (WB)" />
+        <stop id="22031" node="95711362" description="3rd St &amp; K St (EB)" />
+        <stop id="22032" node="4924139009" description="L St &amp; 425 (SB)" />
+        <stop id="22033" node="271823761" description="L St &amp; 4th St (NB)" />
+        <stop id="22034" node="596986226" description="Cowell Blvd &amp; Research Park S Dr (WB)" />
+        <stop id="22035" node="3900961309" description="Cowell Blvd &amp; Research Park S Dr (EB)" />
+        <stop id="22036" node="95715556" description="Cowell Blvd &amp; Drew Ave (WB)" />
+        <stop id="22037" node="95715556" description="Cowell Blvd &amp; Drew Ave (EB)" />
+        <stop id="22038" node="95715558" description="Cowell Blvd &amp; Valdora St (WB)" />
+        <stop id="22039" node="2432704005" description="Pole Line Rd &amp; Cowell Blvd (SB)" />
+        <stop id="22040" node="3283186569" description="Pole Line Rd &amp; Cowell Blvd (NB)" />
+        <stop id="22041" node="95715559" description="Cowell Blvd &amp; Valdora St (EB)" />
+        <stop id="22042" node="256205791" description="Lillard Dr &amp; Farragut Cir (WB)" />
+        <stop id="22043" node="2849810514" description="Lillard Dr &amp; Evans Ct (WB)" />
+        <stop id="22045" node="2432065089" description="Cowell Blvd &amp; Halsey Cir (WB)" />
+        <stop id="22046" node="95712808" description="Drummond Ave &amp; Lillard Dr (SB)" />
+        <stop id="22047" node="366761718" description="Drummond Ave &amp; Cowell (SB)" />
+        <stop id="22048" node="5352536590" description="Cowell Blvd &amp; Drummond Ave (EB)" />
+        <stop id="22051" node="2432065092" description="Cowell Blvd &amp; Ohlone St (EB)" />
+        <stop id="22052" node="95715572" description="Cowell Blvd &amp; Ohlone St (WB)" />
+        <stop id="22053" node="95715577" description="Cowell Blvd &amp; La Vida Way (WB)" />
+        <stop id="22054" node="95715578" description="Cowell Blvd &amp; La Vida (EB)" />
+        <stop id="22055" node="2432065144" description="Cowell Blvd &amp; Ensenada Dr (WB)" />
+        <stop id="22056" node="95715582" description="Cowell Blvd &amp; Ensenada Dr (EB)" />
+        <stop id="22057" node="366764149" description="Cowell Blvd &amp; Sunrise Ct (EB)" />
+        <stop id="22058" node="395030214" description="Cowell Blvd &amp; Sunrise (WB)" />
+        <stop id="22059" node="599381072" description="Mace Blvd &amp; Chiles Rd (SB)" />
+        <stop id="22060" node="2432065119" description="Mace Blvd &amp; Cowell Blvd (NB)" />
+        <stop id="22061" node="5398189131" description="Chiles Rd &amp; Mace Blvd (EB)" />
+        <stop id="22062" node="597474378" description="El Cemonte Ave &amp; Glide Dr (SB)" />
+        <stop id="22063" node="95715543" description="Cowell Blvd &amp; El Cemonte Ave (WB)" />
+        <stop id="22064" node="366763831" description="Cowell Blvd &amp; Mace Blvd (WB)" />
+        <stop id="22065" node="1897585179" description="Alhambra Dr &amp; Mace Blvd (WB)" />
+        <stop id="22066" node="1897585181" description="Alhambra Dr &amp; Mace Blvd (EB)" />
+        <stop id="22067" node="1897585102" description="Alhambra Dr &amp; 5th St (EB)" />
+        <stop id="22068" node="2578995413" description="5th St &amp; Verona Terrace (SB)" />
+        <stop id="22069" node="2578986092" description="5th St &amp; Pelz Bike Path (WB)" />
+        <stop id="22070" node="5554742310" description="5th St &amp; Windmere Apts. (EB)" />
+        <stop id="22071" node="4595133310" description="5th St &amp; San Rafael St (WB)" />
+        <stop id="22072" node="2578985048" description="5th St &amp; Cantrill (WB)" />
+        <stop id="22073" node="1918186801" description="5th St &amp; Cantrill (EB)" />
+        <stop id="22074" node="2579936805" description="5th St &amp; Post Office / Pole Line Rd (WB)" />
+        <stop id="22075" node="2579936421" description="5th St &amp; Post Office / Pole Line (EB)" />
+        <stop id="22076" node="2579936417" description="5th St &amp; Pole Line Rd (EB)" />
+        <stop id="22077" node="2560323391" description="5th St &amp; Pole Line Rd (WB)" />
+        <stop id="22078" node="1190339479" description="5th St &amp; Davis PW Corp Yard (WB)" />
+        <stop id="22079" node="2580285987" description="Covell Blvd &amp; Alhambra Dr (EB)" />
+        <stop id="22081" node="95713018" description="Monarch Ln &amp; Campbell (SB)" />
+        <stop id="22082" node="95717308" description="Temple Dr &amp; Balsam Pl (WB)" />
+        <stop id="22085" node="95711387" description="Tulip Ln &amp; Cascade Pl (SB)" />
+        <stop id="22087" node="2558584691" description="Loyola Dr &amp; Whittier Dr (WB)" />
+        <stop id="22088" node="1834815892" description="Loyola Dr &amp; Nutmeg Ln (WB)" />
+        <stop id="22091" node="95717702" description="Loyola Dr &amp; Regis Dr (WB)" />
+        <stop id="22092" node="1834909992" description="Pole Line Rd &amp; Claremont Dr (NB)" />
+        <stop id="22094" node="5439281188" description="Pole Line Rd &amp; 8th St (NB)" />
+        <stop id="22096" node="2580278629" description="Covell Blvd &amp; Pole Line Rd (EB)" />
+        <stop id="22097" node="2581501095" description="Covell Blvd &amp; J St (WB)" />
+        <stop id="22098" node="2581501073" description="Covell Blvd &amp; J St (EB)" />
+        <stop id="22099" node="1834910071" description="J St &amp; Cranbrook Ct (SB)" />
+        <stop id="22100" node="2580189228" description="J St &amp; Drexel Dr (SB)" />
+        <stop id="22101" node="95719855" description="J St &amp; Alice St (SB)" />
+        <stop id="22102" node="577481841" description="8th St &amp; Chestnut Ln (EB)" />
+        <stop id="22103" node="2581548134" description="8th St &amp; Chestnut Ln (WB)" />
+        <stop id="22104" node="429270459" description="8th St &amp; L St (WB)" />
+        <stop id="22105" node="3954294407" description="8th St &amp; L St (EB)" />
+        <stop id="22106" node="95718049" description="Pole Line Rd &amp; Picasso Ave (NB)" />
+        <stop id="22110" node="5674218701" description="8th St &amp; J St (WB)" />
+        <stop id="22111" node="429270474" description="8th St &amp; J St (EB)" />
+        <stop id="22112" node="2580278641" description="F St &amp; Covell Blvd (NB)" />
+        <stop id="22113" node="265413593" description="F St &amp; Covell Blvd (SB)" />
+        <stop id="22114" node="95718585" description="14th St &amp; F St (WB)" />
+        <stop id="22115" node="95718585" description="F St &amp; 14th St (NB)" />
+        <stop id="22116" node="95707022" description="F St &amp; 12th St (NB)" />
+        <stop id="22117" node="4580676107" description="F St &amp; 8th St (NB)" />
+        <stop id="22118" node="429270479" description="8th St &amp; G St (WB)" />
+        <stop id="22119" node="429270479" description="8th St &amp; G St (EB)" />
+        <stop id="22120" node="95720460" description="8th St &amp; D St (WB)" />
+        <stop id="22121" node="95720460" description="8th St &amp; D St (EB)" />
+        <stop id="22122" node="2581914786" description="F St &amp; 8th St (SB)" />
+        <stop id="22123" node="4223226711" description="14th St &amp; B St (WB)" />
+        <stop id="22124" node="4223226711" description="14th St &amp; B St (EB)" />
+        <stop id="22125" node="95711204" description="14th St &amp; Davis HS (WB)" />
+        <stop id="22126" node="272954618" description="Catalina Dr &amp; Alvarado Ave (NB)" />
+        <stop id="22127" node="95718604" description="F Street &amp; Grande (SB)" />
+        <stop id="22128" node="95717929" description="Anderson &amp; Sandpiper (EB)" />
+        <stop id="22129" node="95715787" description="Anderson &amp; Oriole (NB)" />
+        <stop id="22130" node="95715889" description="Anderson Rd &amp; Valencia (NB)" />
+        <stop id="22131" node="575199593" description="Anderson Rd &amp; Bianco (NB)" />
+        <stop id="22132" node="575169101" description="Alvarado &amp; Anderson (WB)" />
+        <stop id="22133" node="575168935" description="Alvarado Ave &amp; Espana (WB)" />
+        <stop id="22134" node="575169098" description="Alvarado Ave &amp; Anderson (WB)" />
+        <stop id="22135" node="366756982" description="Alvarado Ave &amp; Anderson (EB)" />
+        <stop id="22136" node="366757108" description="Alvarado Ave &amp; Sycamore (WB)" />
+        <stop id="22137" node="95710465" description="Alvarado Ave &amp; Sycamore (EB)" />
+        <stop id="22138" node="95718750" description="Sycamore Ln &amp; Alvarado (SB)" />
+        <stop id="22139" node="95718748" description="Sycamore Ln &amp; Pepperwood Apts (NB)" />
+        <stop id="22140" node="2853084955" description="Sycamore Ln &amp; Antelope (NB)" />
+        <stop id="22141" node="2853084955" description="Sycamore Ln &amp; Antelope (SB)" />
+        <stop id="22142" node="256038126" description="Sycamore Ln &amp; Chaparral Apts (NB)" />
+        <stop id="22143" node="4005153480" description="Sycamore Ln &amp; Chaparral Apts (SB)" />
+        <stop id="22144" node="95718742" description="North Sycamore Loop (NB)" />
+        <stop id="22145" node="3935230507" description="Oak Ave &amp; Covell (NB)" />
+        <stop id="22146" node="95711206" description="14th St &amp; Oak St (EB)" />
+        <stop id="22147" node="95711206" description="14th St &amp; Oak St (WB)" />
+        <stop id="22148" node="95711206" description="Oak Ave &amp; 14th St (SB)" />
+        <stop id="22149" node="95722271" description="Villanova Dr &amp; Reed Dr (WB)" />
+        <stop id="22150" node="95722843" description="Villanova Dr &amp; Anderson Rd (EB)" />
+        <stop id="22153" node="3076146959" description="Anderson Rd &amp; Villanova Dr (NB)" />
+        <stop id="22154" node="95719103" description="Anderson Rd &amp; Hanover Dr (NB)" />
+        <stop id="22155" node="5439130117" description="Anderson Rd &amp; Hanover Dr (SB)" />
+        <stop id="22156" node="95719474" description="Anderson Rd &amp; Villanova Dr (SB)" />
+        <stop id="22157" node="95713500" description="Anderson Rd &amp; Amherst Dr (NB)" />
+        <stop id="22158" node="95713500" description="Anderson Rd &amp; Amherst Dr (SB)" />
+        <stop id="22159" node="559739124" description="Anderson Rd &amp; Russell Blvd (SB)" />
+        <stop id="22160" node="5027298044" description="Anderson Rd &amp; Russell Blvd (NB)" />
+        <stop id="22161" node="95719967" description="Oak Ave &amp; Antioch Dr (NB)" />
+        <stop id="22162" node="95719967" description="Oak Ave &amp; Antioch Dr (SB)" />
+        <stop id="22163" node="95718668" description="Oak Ave &amp; 8th St (NB)" />
+        <stop id="22164" node="95718668" description="Oak Ave &amp; 8th St (SB)" />
+        <stop id="22165" node="5027298040" description="Oak Ave &amp; Russell Blvd (NB)" />
+        <stop id="22166" node="5027298040" description="Oak Ave &amp; Russell Blvd (SB)" />
+        <stop id="22167" node="272048015" description="Memorial Union Terminal Arrival &amp; Howard Way (NB)" />
+        <stop id="22168" node="273245111" description="Hutchison &amp; Shields Library (WB)" />
+        <stop id="22169" node="566900815" description="Hutchison Dr &amp; Art Building (EB)" />
+        <stop id="22172" node="366763830" description="Cowell Blvd &amp; Mace Blvd (EB)" />
+        <stop id="22173" node="2276473527" description="14th St &amp; B St (EB) " />
+        <stop id="22174" node="3119663186" description="Lillard Dr &amp; Evans Ct (EB)" />
+        <stop id="22175" node="5598639595" description="La Rue Rd &amp; Orchard (NB)" />
+        <stop id="22176" node="2607436578" description="La Rue Rd &amp; Orchard (SB)" />
+        <stop id="22177" node="2599137935" description="Russell Blvd &amp; Sycamore Ln (EB)" />
+        <stop id="22178" node="5027298051" description="Russell Blvd &amp; Sycamore Ln (WB)" />
+        <stop id="22179" node="559341578" description="Sycamore Ln &amp; Wake Forest Dr (SB)" />
+        <stop id="22185" node="95718672" description="Sycamore Ln &amp; 8th St (NB)" />
+        <stop id="22186" node="95712925" description="Sycamore Ln &amp; Villanova Dr (NB)" />
+        <stop id="22187" node="95714016" description="Sycamore Ln &amp; Colby Dr. (SB)" />
+        <stop id="22188" node="95713476" description="Sycamore Ln &amp; Bucknell Dr (NB)" />
+        <stop id="22189" node="95713942" description="Sycamore Ln &amp; Cornell Dr (NB)" />
+        <stop id="22190" node="95715714" description="Sycamore Ln &amp; Cornell Dr (SB)" />
+        <stop id="22191" node="256192375" description="Sycamore Ln &amp; Radcliffe Dr (NB)" />
+        <stop id="22192" node="256192375" description="Sycamore Ln &amp; Notre Dame Dr (SB)" />
+        <stop id="22193" node="1919602452" description="Radcliffe Dr &amp; Apple Ln (NB)" />
+        <stop id="22194" node="95711706" description="Drake Dr &amp; Drake Dr Apts (WB)" />
+        <stop id="22195" node="95718756" description="Sycamore Ln &amp; Drake Dr (SB)" />
+        <stop id="22196" node="3935242279" description="Covell Blvd &amp; Sycamore Ln (WB)" />
+        <stop id="22197" node="3935230640" description="Covell Blvd &amp; Sycamore Ln (EB)" />
+        <stop id="22198" node="3935230614" description="Covell Blvd &amp; Shasta Dr (EB)" />
+        <stop id="22199" node="2312165182" description="Covell Blvd &amp; John Jones Rd (WB)" />
+        <stop id="22200" node="5674124848" description="Covell Blvd &amp; Shasta Dr (WB)" />
+        <stop id="22201" node="3935255015" description="Covell Blvd &amp; Denali Dr (EB)" />
+        <stop id="22202" node="3935255037" description="Covell Blvd &amp; West Area Bike Path (EB)" />
+        <stop id="22203" node="5398417042" description="Lake Blvd &amp; Covell Blvd (SB)" />
+        <stop id="22204" node="5398417042" description="Lake Blvd &amp; Covell Blvd (NB)" />
+        <stop id="22205" node="364125326" description="Lake Blvd &amp; Oyster Bay (SB)" />
+        <stop id="22206" node="364125326" description="Lake Blvd &amp; Wood Circle (NB)" />
+        <stop id="22207" node="564464462" description="Arlington Blvd &amp; Lake Blvd (NB)" />
+        <stop id="22208" node="564464462" description="Arlington Blvd &amp; Lake Blvd (SB)" />
+        <stop id="22209" node="95715286" description="Arlington Blvd &amp; Cabot St (NB)" />
+        <stop id="22210" node="95721871" description="Arlington Blvd &amp; Cabot St (SB)" />
+        <stop id="22211" node="95721152" description="Arlington Blvd &amp; Shasta Dr (SB)" />
+        <stop id="22212" node="95721868" description="Arlington Blvd &amp; Shasta Dr (NB)" />
+        <stop id="22216" node="95722987" description="Humboldt Ave &amp; Imperial (EB)" />
+        <stop id="22217" node="4069367849" description="Humboldt Ave &amp; Arthur St (EB)" />
+        <stop id="22220" node="267567432" description="Arthur St &amp; North Adams St (SB)" />
+        <stop id="22221" node="573992110" description="Arthur St &amp; Alameda Ave (SB)" />
+        <stop id="22223" node="95721804" description="Arlington Blvd &amp; Westernesse Rd (SB)" />
+        <stop id="22224" node="95712924" description="Arlington Blvd &amp; Bucklebury Rd (SB)" />
+        <stop id="22225" node="5674107548" description="Russell Blvd &amp; Arthur St (WB)" />
+        <stop id="22226" node="95719198" description="Lake Blvd &amp; Portage Bay (NB)" />
+        <stop id="22227" node="4449717149" description="Lake Blvd &amp; Salem Ave (NB)" />
+        <stop id="22228" node="564464445" description="Lake Blvd &amp; Westlake Plaza (NB)" />
+        <stop id="22229" node="564442932" description="Russell Blvd &amp; Arlington Farm (WB)" />
+        <stop id="22230" node="559341578" description="Sycamore Ln &amp; University Mall (NB)" />
+        <stop id="22233" node="429270478" description="J St &amp; 8th St (SB)" />
+        <stop id="22234" node="5554742300" description="5th St &amp; Pena Dr (EB)" />
+        <stop id="22235" node="1897585123" description="Alhambra Dr &amp; Arroyo Ave (EB)" />
+        <stop id="22236" node="95708605" description="Alhambra Dr &amp; Atlantis / Carcia (WB)" />
+        <stop id="22237" node="5554742305" description="5th St &amp; Spafford St (EB)" />
+        <stop id="22238" node="5554742328" description="5th St &amp; Spafford (WB)" />
+        <stop id="22239" node="436326295" description="Hutchison Dr &amp; Ext Center (WB)" />
+        <stop id="22240" node="1941071656" description="Hutchison Dr &amp; Health Sci Drive (EB)" />
+        <stop id="22242" node="3900962592" description="Richards Blvd &amp; Olive Dr (NB)" />
+        <stop id="22243" node="3952968558" description="Mace Blvd &amp; 2nd St (SB)" />
+        <stop id="22244" node="95714170" description="Mace Blvd &amp; 2nd St (NB)" />
+        <stop id="22245" node="2580285993" description="Covell Blvd &amp; Mace Blvd (EB)" />
+        <stop id="22249" node="95717345" description="Moore Blvd &amp; Pole Line Rd (EB)" />
+        <stop id="22250" node="1997141665" description="Moore Blvd &amp; Pollock (EB)" />
+        <stop id="22254" node="95712807" description="Lillard &amp; Drummond (EB)" />
+        <stop id="22255" node="95711280" description="Drummond &amp; Albany (NB)" />
+        <stop id="22256" node="5674111323" description="Silo Terminal &amp; Center Island (WB)" />
+        <stop id="22257" node="5674111323" description="Silo Terminal &amp; Center Island (EB)" />
+        <stop id="22258" node="530445028" description="Silo Terminal &amp; Haring Hall (WB)" />
+        <stop id="22260" node="95717967" description="Pole Line &amp; Donner (NB)" />
+        <stop id="22261" node="2447793859" description="Moore Blvd &amp; Raphael (EB)" />
+        <stop id="22268" node="2405677676" />
+        <stop id="22272" node="271794589" description="Memorial Union &amp; Main Island (NB)" />
+        <stop id="22273" node="5598618125" description="Memorial Union &amp; Main Island (SB)" />
+        <stop id="22274" node="5598618125" description="Memorial Union &amp; East Island (SB)" />
+        <stop id="22280" node="2558584690" description="Pole Line &amp; Wahl Way (SB)" />
+        <stop id="22281" node="3534592785" description="East 8th Street &amp; Pole Line Road (WB)" />
+        <stop id="22282" node="5553493395" description="2nd St. &amp; Target Drive (WB)" />
+        <stop id="22283" node="95712140" description="Pena &amp; 2nd St. (NB)" />
+        <stop id="22285" node="562412582" />
+        <stop id="22286" node="3937107117" description="Hutchison &amp; Sage (NB)" />
+        <stop id="22287" node="3937105639" description="Hutchison &amp; Sage (SB)" />
+        <stop id="22288" node="1783152169" description="West Village Sq &amp; Town Square (NB)" />
+        <stop id="22289" node="1783152166" description="West Village Sq &amp; Community College (SB)" />
+        <stop id="22290" node="95712724" description="Alhambra Dr &amp; Loyola Dr (WB)" />
+        <stop id="22291" node="1897585243" description="Alhambra Dr &amp; Loyola Dr (EB)" />
+        <stop id="22292" node="95718672" description="Sycamore &amp; 8th (SB)" />
+        <stop id="22293" node="1897585161" description="Alhambra &amp; 5th/Verona (EB)" />
+        <stop id="22294" node="256086279" description="Moore Blvd &amp; Rockwell (EB)" />
+        <stop id="22295" node="2432065135" description="Drew Ave &amp; Cowell Blvd (NB)" />
+        <stop id="22296" node="3283178246" description="Drew &amp; Research Park Drive (NB)" />
+        <stop id="22297" node="95712801" description="Lillard Dr &amp; Cowell Blvd (EB)" />
+        <stop id="22299" node="1897585132" description="Alhambra &amp; Atlantis / Arroyo (WB)" />
+        <stop id="22300" node="599177597" description="5th Street &amp; Verona Terrace (EB)" />
+        <stop id="22301" node="559308544" description="Anderson &amp; Sunset (NB)" />
+        <stop id="22302" node="95719475" description="Anderson &amp; Sunset (SB)" />
+        <stop id="22304" node="5674119320" description="Tilia &amp; Celadon (EB)" />
+        <stop id="22305" node="3936513778" description="2080 Tilia St-Sol at West Village (EB)" />
+        <stop id="22312" node="95718600" description="F Street &amp; Faro (SB)" />
+        <stop id="22313" node="95718598" description="F Street &amp; Bueno (SB)" />
+        <stop id="22314" node="95711206" description="Oak &amp; 14th Street (NB)" />
+        <stop id="22316" node="5674107548" description="Russell &amp; Arthur (EB)" />
+        <stop id="22317" node="498524172" description="5th Street &amp; L Street (WB)" />
+        <stop id="22318" node="597031354" description="Research Park Dr &amp; Cowell (EB)" />
+        <stop id="22319" node="498524172" description="5th Street &amp; K Street (EB)" />
+        <stop id="22324" node="2405677646" />
+        <stop id="22325" node="95711574" description="L Street &amp; Duke (SB)" />
+        <stop id="22326" node="256219131" description="2nd Street &amp; Cousteau Place (WB)" />
+        <stop id="22327" node="2581960342" />
+        <stop id="22328" node="256195238" />
+        <stop id="22329" node="95717345" />
+        <stop id="22330" node="282545493" />
+        <stop id="22331" node="1834909953" />
+        <stop id="22332" node="2405677559" />
+        <stop id="22333" node="95711148" />
+        <stop id="22335" node="2405677604" />
+        <stop id="22336" node="95719092" />
+        <stop id="22338" node="2405677633" />
+        <stop id="22339" node="2430687220" />
+        <stop id="22340" node="2405677649" />
+        <stop id="22342" node="95718211" />
+        <stop id="22343" node="95715546" description="Cowell Blvd &amp; Schmeiser Ave (WB)" />
+        <stop id="22344" node="2849805223" description="Glide Dr &amp; Schmeiser Ave (EB)" />
+        <stop id="22345" node="95718600" />
+        <stop id="22346" node="95717929" />
+        <stop id="22347" node="95715787" />
+        <stop id="22348" node="95715693" />
+        <stop id="22349" node="3935230544" />
+        <stop id="22352" node="5398189131" description="Chiles Rd &amp; Mace Blvd (WB)" />
+        <stop id="22357" node="395032653" description="Pole Line Rd &amp; Loyola Dr (NB)" />
+        <stop id="22358" node="2849805223" description="Glide Dr &amp; Schmeiser Ave (WB)" />
+        <stop id="22359" node="3957570467" description="Glide Dr &amp; El Cemonte Ave (WB)" />
+        <stop id="22361" node="3937107151" description="Hutchison Dr &amp; Health Sci Dr (WB)" />
+        <stop id="22362" node="2580279694" description="Covell Blvd &amp; Pole Line Rd (WB)" />
+        <stop id="22363" node="2580285968" description="Covell Blvd &amp; Wright Blvd (WB)" />
+        <stop id="22364" node="2580285003" description="Covell Blvd &amp; Wright Blvd (EB)" />
+        <stop id="22366" node="564464445" />
+        <stop id="22367" node="4449717137" />
+        <stop id="22494" node="95712924" description="Arlington Blvd &amp; Bucklebury Rd (NB)" />
+        <stop id="22495" node="2849846600" description="Arlington Blvd &amp; Calaveras Ave (NB)" />
+        <stop id="22496" node="3957570147" description="Glide Dr &amp; El Cemonte Ave (EB)" />
+        <stop id="22497" node="95715543" description="Cowell Blvd &amp; El Cemonte Ave (EB)" />
+        <stop id="22498" node="95715546" description="Schmeiser Ave &amp; Cowell Blvd (NB)" />
+        <stop id="22973" node="1897530240" description="Alhambra Dr &amp; 5th St (WB)" />
+        <stop id="807734" node="265674141" />
+        <stop id="807735" node="95709746" />
+        <stop id="807736" node="265674141" />
+        <stop id="807737" node="2283899823" />
+    </stops>
+    <routes>
+        <route name="A">
+            <routestop stop="22258" />
+            <routestop stop="22169" />
+            <routestop stop="22000" />
+            <routestop stop="22005" />
+            <routestop stop="22007" />
+            <routestop stop="22011" />
+            <routestop stop="22031" />
+            <routestop stop="22033" />
+            <routestop stop="22076" />
+            <routestop stop="22075" />
+            <routestop stop="22073" />
+            <routestop stop="22073" />
+            <routestop stop="22234" />
+            <routestop stop="22237" />
+            <routestop stop="22070" />
+            <routestop stop="22300" />
+            <routestop stop="22067" />
+            <routestop stop="22235" />
+            <routestop stop="22066" />
+            <routestop stop="22243" />
+            <routestop stop="22061" />
+            <routestop stop="22062" />
+        </route>
+        <route name="B">
+            <routestop stop="22274" />
+            <routestop stop="22230" />
+            <routestop stop="22185" />
+            <routestop stop="22189" />
+            <routestop stop="22188" />
+            <routestop stop="22186" />
+            <routestop stop="22191" />
+            <routestop stop="22193" />
+            <routestop stop="22194" />
+            <routestop stop="22195" />
+            <routestop stop="22192" />
+            <routestop stop="22187" />
+            <routestop stop="22190" />
+            <routestop stop="22292" />
+            <routestop stop="22179" />
+            <routestop stop="22167" />
+        </route>
+        <route name="D">
+            <routestop stop="22256" />
+            <routestop stop="22239" />
+            <routestop stop="22361" />
+            <routestop stop="22225" />
+            <routestop stop="22229" />
+            <routestop stop="22226" />
+            <routestop stop="22227" />
+            <routestop stop="22228" />
+            <routestop stop="22208" />
+            <routestop stop="22210" />
+            <routestop stop="22211" />
+            <routestop stop="22223" />
+            <routestop stop="22224" />
+            <routestop stop="22316" />
+            <routestop stop="22240" />
+            <routestop stop="22173" />
+            <routestop stop="22256" />
+        </route>
+        <route name="E">
+            <routestop stop="22274" />
+            <routestop stop="22014" />
+            <routestop stop="22016" />
+            <routestop stop="22018" />
+            <routestop stop="22020" />
+            <routestop stop="22027" />
+            <routestop stop="22117" />
+            <routestop stop="22116" />
+            <routestop stop="22115" />
+            <routestop stop="22112" />
+            <routestop stop="22099" />
+            <routestop stop="22100" />
+            <routestop stop="22101" />
+            <routestop stop="22233" />
+            <routestop stop="22118" />
+            <routestop stop="22122" />
+            <routestop stop="22019" />
+            <routestop stop="22017" />
+            <routestop stop="22015" />
+            <routestop stop="22013" />
+            <routestop stop="22167" />
+        </route>
+        <route name="F">
+            <routestop stop="22274" />
+            <routestop stop="22165" />
+            <routestop stop="22163" />
+            <routestop stop="22161" />
+            <routestop stop="22314" />
+            <routestop stop="22145" />
+            <routestop stop="22126" />
+            <routestop stop="22133" />
+            <routestop stop="22132" />
+            <routestop stop="22131" />
+            <routestop stop="22130" />
+            <routestop stop="22129" />
+            <routestop stop="22128" />
+            <routestop stop="22127" />
+            <routestop stop="22312" />
+            <routestop stop="22313" />
+            <routestop stop="22113" />
+            <routestop stop="22114" />
+            <routestop stop="22123" />
+            <routestop stop="22125" />
+            <routestop stop="22148" />
+            <routestop stop="22162" />
+            <routestop stop="22164" />
+            <routestop stop="22166" />
+            <routestop stop="22167" />
+        </route>
+        <route name="G">
+            <routestop stop="22273" />
+            <routestop stop="22160" />
+            <routestop stop="22301" />
+            <routestop stop="22157" />
+            <routestop stop="22153" />
+            <routestop stop="22154" />
+            <routestop stop="22134" />
+            <routestop stop="22136" />
+            <routestop stop="22139" />
+            <routestop stop="22140" />
+            <routestop stop="22142" />
+            <routestop stop="22144" />
+            <routestop stop="22143" />
+            <routestop stop="22141" />
+            <routestop stop="22138" />
+            <routestop stop="22137" />
+            <routestop stop="22135" />
+            <routestop stop="22155" />
+            <routestop stop="22156" />
+            <routestop stop="22158" />
+            <routestop stop="22302" />
+            <routestop stop="22159" />
+            <routestop stop="22167" />
+        </route>
+        <route name="J">
+            <routestop stop="22256" />
+            <routestop stop="22175" />
+            <routestop stop="22160" />
+            <routestop stop="22301" />
+            <routestop stop="22157" />
+            <routestop stop="22153" />
+            <routestop stop="22154" />
+            <routestop stop="22134" />
+            <routestop stop="22136" />
+            <routestop stop="22139" />
+            <routestop stop="22140" />
+            <routestop stop="22142" />
+            <routestop stop="22144" />
+        </route>
+        <route name="K">
+            <routestop stop="22274" />
+            <routestop stop="22178" />
+            <routestop stop="22225" />
+            <routestop stop="22229" />
+            <routestop stop="22226" />
+            <routestop stop="22227" />
+            <routestop stop="22228" />
+            <routestop stop="22208" />
+            <routestop stop="22210" />
+            <routestop stop="22211" />
+            <routestop stop="22216" />
+            <routestop stop="22217" />
+            <routestop stop="22220" />
+            <routestop stop="22221" />
+            <routestop stop="22177" />
+            <routestop stop="22167" />
+        </route>
+        <route name="L">
+            <routestop stop="22258" />
+            <routestop stop="22169" />
+            <routestop stop="22000" />
+            <routestop stop="22013" />
+            <routestop stop="22022" />
+            <routestop stop="22024" />
+            <routestop stop="22121" />
+            <routestop stop="22119" />
+            <routestop stop="22111" />
+            <routestop stop="22105" />
+            <routestop stop="22102" />
+            <routestop stop="22094" />
+            <routestop stop="22357" />
+            <routestop stop="22092" />
+            <routestop stop="22106" />
+            <routestop stop="22260" />
+            <routestop stop="22249" />
+            <routestop stop="22294" />
+            <routestop stop="22261" />
+            <routestop stop="22250" />
+            <routestop stop="22081" />
+            <routestop stop="22082" />
+            <routestop stop="22085" />
+            <routestop stop="22091" />
+            <routestop stop="22088" />
+            <routestop stop="22087" />
+            <routestop stop="22280" />
+            <routestop stop="22281" />
+            <routestop stop="22103" />
+            <routestop stop="22104" />
+            <routestop stop="22110" />
+            <routestop stop="22118" />
+            <routestop stop="22120" />
+            <routestop stop="22023" />
+            <routestop stop="22014" />
+            <routestop stop="22001" />
+            <routestop stop="22168" />
+            <routestop stop="22256" />
+        </route>
+        <route name="M">
+            <routestop stop="22272" />
+            <routestop stop="22014" />
+            <routestop stop="22002" />
+            <routestop stop="22004" />
+            <routestop stop="22035" />
+            <routestop stop="22295" />
+            <routestop stop="22296" />
+            <routestop stop="22318" />
+            <routestop stop="22045" />
+            <routestop stop="22038" />
+            <routestop stop="22036" />
+            <routestop stop="22034" />
+            <routestop stop="22242" />
+            <routestop stop="22003" />
+            <routestop stop="22013" />
+            <routestop stop="22021" />
+            <routestop stop="22167" />
+        </route>
+        <route name="O">
+            <routestop stop="22272" />
+            <routestop stop="22014" />
+            <routestop stop="22005" />
+            <routestop stop="22007" />
+            <routestop stop="22011" />
+            <routestop stop="22031" />
+            <routestop stop="22033" />
+            <routestop stop="22076" />
+            <routestop stop="22075" />
+            <routestop stop="22073" />
+            <routestop stop="22234" />
+            <routestop stop="22237" />
+            <routestop stop="22070" />
+            <routestop stop="22300" />
+            <routestop stop="22067" />
+            <routestop stop="22235" />
+            <routestop stop="22066" />
+            <routestop stop="22243" />
+            <routestop stop="22282" />
+            <routestop stop="22326" />
+            <routestop stop="22283" />
+            <routestop stop="22071" />
+            <routestop stop="22072" />
+            <routestop stop="22074" />
+            <routestop stop="22281" />
+            <routestop stop="22103" />
+            <routestop stop="22325" />
+            <routestop stop="22032" />
+            <routestop stop="22030" />
+            <routestop stop="22012" />
+            <routestop stop="22009" />
+            <routestop stop="22013" />
+            <routestop stop="22021" />
+            <routestop stop="22167" />
+        </route>
+        <route name="P">
+            <routestop stop="22272" />
+            <routestop stop="22025" />
+            <routestop stop="22028" />
+            <routestop stop="22319" />
+            <routestop stop="22076" />
+            <routestop stop="22039" />
+            <routestop stop="22297" />
+            <routestop stop="22174" />
+            <routestop stop="22254" />
+            <routestop stop="22255" />
+            <routestop stop="22048" />
+            <routestop stop="22051" />
+            <routestop stop="22054" />
+            <routestop stop="22056" />
+            <routestop stop="22057" />
+            <routestop stop="22060" />
+            <routestop stop="22244" />
+            <routestop stop="22363" />
+            <routestop stop="22362" />
+            <routestop stop="22097" />
+            <routestop stop="22113" />
+            <routestop stop="22114" />
+            <routestop stop="22123" />
+            <routestop stop="22125" />
+            <routestop stop="22147" />
+            <routestop stop="22149" />
+            <routestop stop="22153" />
+            <routestop stop="22154" />
+            <routestop stop="22196" />
+            <routestop stop="22199" />
+            <routestop stop="22200" />
+            <routestop stop="22203" />
+            <routestop stop="22205" />
+            <routestop stop="22208" />
+            <routestop stop="22210" />
+            <routestop stop="22211" />
+            <routestop stop="22223" />
+            <routestop stop="22224" />
+            <routestop stop="22316" />
+            <routestop stop="22177" />
+            <routestop stop="22167" />
+        </route>
+        <route name="Q">
+            <routestop stop="22272" />
+            <routestop stop="22178" />
+            <routestop stop="22225" />
+            <routestop stop="22494" />
+            <routestop stop="22495" />
+            <routestop stop="22212" />
+            <routestop stop="22209" />
+            <routestop stop="22207" />
+            <routestop stop="22206" />
+            <routestop stop="22204" />
+            <routestop stop="22202" />
+            <routestop stop="22201" />
+            <routestop stop="22198" />
+            <routestop stop="22197" />
+            <routestop stop="22155" />
+            <routestop stop="22150" />
+            <routestop stop="22146" />
+            <routestop stop="22124" />
+            <routestop stop="22115" />
+            <routestop stop="22112" />
+            <routestop stop="22098" />
+            <routestop stop="22096" />
+            <routestop stop="22364" />
+            <routestop stop="22079" />
+            <routestop stop="22245" />
+            <routestop stop="22243" />
+            <routestop stop="22059" />
+            <routestop stop="22058" />
+            <routestop stop="22055" />
+            <routestop stop="22053" />
+            <routestop stop="22052" />
+            <routestop stop="22047" />
+            <routestop stop="22046" />
+            <routestop stop="22043" />
+            <routestop stop="22042" />
+            <routestop stop="22040" />
+            <routestop stop="22077" />
+            <routestop stop="22078" />
+            <routestop stop="22317" />
+            <routestop stop="22029" />
+            <routestop stop="22026" />
+            <routestop stop="22021" />
+            <routestop stop="22167" />
+        </route>
+        <route name="V">
+            <routestop stop="22273" />
+            <routestop stop="22176" />
+            <routestop stop="22239" />
+            <routestop stop="22361" />
+            <routestop stop="22286" />
+            <routestop stop="22288" />
+            <routestop stop="22305" />
+        </route>
+        <route name="W">
+            <routestop stop="22257" />
+            <routestop stop="22169" />
+            <routestop stop="22000" />
+            <routestop stop="22002" />
+            <routestop stop="22004" />
+            <routestop stop="22035" />
+            <routestop stop="22037" />
+            <routestop stop="22041" />
+            <routestop stop="22297" />
+            <routestop stop="22174" />
+            <routestop stop="22254" />
+            <routestop stop="22255" />
+            <routestop stop="22045" />
+            <routestop stop="22038" />
+            <routestop stop="22036" />
+            <routestop stop="22034" />
+            <routestop stop="22242" />
+            <routestop stop="22003" />
+            <routestop stop="22001" />
+            <routestop stop="22168" />
+            <routestop stop="22256" />
+        </route>
+        <route name="X">
+            <routestop stop="22272" />
+            <routestop stop="22176" />
+            <routestop stop="22285" />
+            <routestop stop="807735" />
+            <routestop stop="807734" />
+            <routestop stop="22175" />
+            <routestop stop="22167" />
+        </route>
+        <route name="Z">
+            <routestop stop="22274" />
+            <routestop stop="22014" />
+            <routestop stop="22005" />
+            <routestop stop="22007" />
+            <routestop stop="22011" />
+            <routestop stop="22031" />
+            <routestop stop="22033" />
+            <routestop stop="22076" />
+            <routestop stop="22075" />
+            <routestop stop="22073" />
+            <routestop stop="22234" />
+            <routestop stop="22237" />
+            <routestop stop="22070" />
+            <routestop stop="22300" />
+            <routestop stop="22067" />
+            <routestop stop="22235" />
+            <routestop stop="22066" />
+            <routestop stop="22243" />
+            <routestop stop="22282" />
+            <routestop stop="22326" />
+            <routestop stop="22283" />
+            <routestop stop="22071" />
+            <routestop stop="22072" />
+            <routestop stop="22074" />
+            <routestop stop="22077" />
+            <routestop stop="22078" />
+            <routestop stop="22032" />
+            <routestop stop="22030" />
+            <routestop stop="22012" />
+            <routestop stop="22009" />
+            <routestop stop="22013" />
+            <routestop stop="22021" />
+            <routestop stop="22167" />
+        </route>
+    </routes>
+</bussystem>
