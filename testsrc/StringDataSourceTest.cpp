@@ -81,3 +81,27 @@ TEST(StringDataSource, ReadTest){
     EXPECT_FALSE(Source2.Peek(TempCh));
     EXPECT_EQ(TempCh,'x');
 }
+
+TEST(StringDataSource, CoverageTest){
+    auto src = std::make_shared<CStringDataSource>("ab");
+    char ch = '\0';
+
+    //get 'a'
+    EXPECT_TRUE(src->Get(ch));
+    EXPECT_EQ(ch, 'a');
+
+    //peek should show 'b'
+    EXPECT_TRUE(src->Peek(ch));
+    EXPECT_EQ(ch, 'b');
+
+    //get 'b'
+    EXPECT_TRUE(src->Get(ch));
+    EXPECT_EQ(ch, 'b');
+
+    //now should be at end
+    EXPECT_TRUE(src->End());
+
+    // Past end, peek should fail
+    EXPECT_FALSE(src->Peek(ch));
+    EXPECT_FALSE(src->Get(ch));
+}

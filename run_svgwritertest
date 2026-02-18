@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="7" failures="0" disabled="0" errors="0" time="0." timestamp="2026-02-18T05:09:44.844" name="AllTests">
+  <testsuite name="SVGWriterTest" tests="7" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-02-18T05:09:44.845">
+    <testcase name="CreateDestroyTest" file="testsrc/SVGWriterTest.cpp" line="5" status="run" result="completed" time="0." timestamp="2026-02-18T05:09:44.845" classname="SVGWriterTest" />
+    <testcase name="CircleTest" file="testsrc/SVGWriterTest.cpp" line="16" status="run" result="completed" time="0." timestamp="2026-02-18T05:09:44.845" classname="SVGWriterTest" />
+    <testcase name="RectangleTest" file="testsrc/SVGWriterTest.cpp" line="44" status="run" result="completed" time="0." timestamp="2026-02-18T05:09:44.845" classname="SVGWriterTest" />
+    <testcase name="LineTest" file="testsrc/SVGWriterTest.cpp" line="73" status="run" result="completed" time="0." timestamp="2026-02-18T05:09:44.845" classname="SVGWriterTest" />
+    <testcase name="SimplePathTest" file="testsrc/SVGWriterTest.cpp" line="98" status="run" result="completed" time="0." timestamp="2026-02-18T05:09:44.845" classname="SVGWriterTest" />
+    <testcase name="GroupTest" file="testsrc/SVGWriterTest.cpp" line="125" status="run" result="completed" time="0." timestamp="2026-02-18T05:09:44.845" classname="SVGWriterTest" />
+    <testcase name="ErrorTests" file="testsrc/SVGWriterTest.cpp" line="176" status="run" result="completed" time="0." timestamp="2026-02-18T05:09:44.845" classname="SVGWriterTest" />
+  </testsuite>
+</testsuites>

@@ -33,6 +33,7 @@ class CStreetMap{
             virtual std::string GetAttributeKey(std::size_t index) const noexcept = 0;
             virtual bool HasAttribute(const std::string &key) const noexcept = 0;
             virtual std::string GetAttribute(const std::string &key) const noexcept = 0;
+            virtual void SetAttribute(const std::string &key, const std::string &value);
         };
 
         struct SWay{
@@ -44,6 +45,8 @@ class CStreetMap{
             virtual std::string GetAttributeKey(std::size_t index) const noexcept = 0;
             virtual bool HasAttribute(const std::string &key) const noexcept = 0;
             virtual std::string GetAttribute(const std::string &key) const noexcept = 0;
+            virtual void AddNodeID(TNodeID nodeid);
+            virtual void SetAttribute (const std::string &key, const std::string &value);
         };
 
         virtual ~CStreetMap(){};
