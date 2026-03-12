@@ -24,9 +24,9 @@ CFLAGS				= -Wall
 CPPFLAGS			= --std=c++20
 LDFLAGS				= `pkg-config --libs $(PKGS)`
 
-TEST_CFLAGS			= $(CFLAGS) -O0 -g --coverage
-TEST_CPPFLAGS		= $(CPPFLAGS) -fno-inline
-TEST_LDFLAGS		= $(LDFLAGS) -lgtest -lgtest_main -lpthread
+TEST_CFLAGS         = $(CFLAGS) -O0 -g --coverage
+TEST_CPPFLAGS       = $(CPPFLAGS) -fno-inline
+TEST_LDFLAGS        = $(LDFLAGS) -lgmock_main -lgmock -lgtest -lpthread
 
 # Define the object files
 SVG_OBJ				= $(OBJ_DIR)/svg.o
@@ -59,6 +59,11 @@ TEST_STREETMAP_OBJ      = $(TESTOBJ_DIR)/StreetMap.o
 TEST_STREETMAP_TEST_OBJ = $(TESTOBJ_DIR)/StreetMapTest.o
 TEST_OSM_OBJ_FILES = $(TEST_STRSRC_OBJ) $(TEST_XMLREADER_OBJ) $(TEST_STREETMAP_OBJ) $(TEST_OSM_OBJ) $(TEST_OSM_TEST_OBJ) $(TEST_STREETMAP_TEST_OBJ)
 
+TEST_BSI_OBJ              = $(TESTOBJ_DIR)/BusSystemIndexer.o
+TEST_BSI_TEST_OBJ         = $(TESTOBJ_DIR)/BusSystemIndexerTest.o
+TEST_MOCKBUS_OBJ          = $(TESTOBJ_DIR)/MockBusSystem.o
+TEST_BSI_OBJ_FILES        = $(TEST_MOCKBUS_OBJ) $(TEST_BSI_OBJ) $(TEST_BSI_TEST_OBJ)
+
 # Define the targets
 SVGLIB_TARGET			= $(LIB_DIR)/libsvg.a
 
@@ -68,6 +73,8 @@ TEST_STRSRC_TARGET 		= $(TESTBIN_DIR)/teststrdatasource
 TEST_SVGWRITER_TARGET   = $(TESTBIN_DIR)/testsvgwriter
 TEST_XMLBS_TARGET		= $(TESTBIN_DIR)/testxmlbs
 TEST_OSM_TARGET			= $(TESTBIN_DIR)/testosm
+TEST_BSI_TARGET         = $(TESTBIN_DIR)/testbsi
+
 
 
 
@@ -79,6 +86,7 @@ all: 	directories 		\
 		run_svgwritertest 	\
 		run_osmtest			\
 		run_xmlbstest 		\
+		run_busindexertest  \
 		gen_html
 
 run_svgtest: $(TEST_SVG_TARGET)
@@ -101,6 +109,10 @@ run_svgwritertest: $(TEST_SVGWRITER_TARGET)
 
 run_xmlbstest: $(TEST_XMLBS_TARGET)
 	$(TEST_XMLBS_TARGET) --gtest_output=xml:$(TESTTMP_DIR)/$@
+	mv $(TESTTMP_DIR)/$@ $@
+	
+run_busindexertest: $(TEST_BSI_TARGET)
+	$(TEST_BSI_TARGET) --gtest_output=xml:$(TESTTMP_DIR)/$@
 	mv $(TESTTMP_DIR)/$@ $@
 
 run_osmtest: $(TEST_OSM_TARGET)
@@ -129,6 +141,9 @@ $(TEST_SVGWRITER_TARGET): $(TEST_SVGWRITER_OBJ_FILES)
 
 $(TEST_XMLBS_TARGET): $(TEST_XMLBS_OBJ_FILES)
 	$(CXX) $(TEST_CFLAGS) $(TEST_CPPFLAGS) $(TEST_XMLBS_OBJ_FILES) $(TEST_LDFLAGS) -o $(TEST_XMLBS_TARGET)
+
+$(TEST_BSI_TARGET): $(TEST_BSI_OBJ_FILES)
+	$(CXX) $(TEST_CFLAGS) $(TEST_CPPFLAGS) $(TEST_BSI_OBJ_FILES) $(TEST_LDFLAGS) -o $(TEST_BSI_TARGET)
 
 $(TEST_OSM_TARGET): $(TEST_OSM_OBJ_FILES)
 	$(CXX) $(TEST_CFLAGS) $(TEST_CPPFLAGS) $(TEST_OSM_OBJ_FILES) $(TEST_LDFLAGS) -o $(TEST_OSM_TARGET)
