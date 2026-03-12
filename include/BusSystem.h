@@ -2,10 +2,13 @@
 #define BUSROUTE_H
 
 #include "StreetMap.h"
+#include "TStopTime.h"
+#include <chrono>
 
 class CBusSystem{
     public:
         using TStopID = uint64_t;
+        using TStopTime = ::TStopTime;
 
         inline static constexpr TStopID InvalidStopID = std::numeric_limits<TStopID>::max();
 
@@ -22,6 +25,8 @@ class CBusSystem{
             virtual std::string Name() const noexcept = 0;
             virtual std::size_t StopCount() const noexcept = 0;
             virtual TStopID GetStopID(std::size_t index) const noexcept = 0;
+            virtual std::size_t TripCount() const noexcept = 0;
+            virtual TStopTime GetStopTime(std::size_t stopindex, std::size_t tripindex) const noexcept = 0;
         };
 
         struct SPath{
