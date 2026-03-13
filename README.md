@@ -41,11 +41,16 @@ This the current status of the project is done.
 * unordered set help - https://en.cppreference.com/w/cpp/container/unordered_set.html
 * sort algo - https://www.youtube.com/watch?v=7h1s2SojIRw
 * writing harder test fixtures - https://www.youtube.com/watch?v=nbFXI9SDfbk
+* format output string - https://en.cppreference.com/w/cpp/io/basic_ostringstream.html
+* pathfinding algorithm - https://www.youtube.com/watch?v=bZkzH5x0SKU
+* tokenization and parsing - https://en.cppreference.com/w/cpp/io/basic_istringstream.html
+* chrono help - https://en.cppreference.com/w/cpp/chrono.html
+* hash table ex - https://www.youtube.com/watch?v=eobMT13w0xU
 * 
 * 
 * 
-* 
-* 
+
+
 
 
 
@@ -60,4 +65,6 @@ This the current status of the project is done.
 * which STL container to use - https://chatgpt.com/share/69b36dc8-278c-8009-96ee-cc4b492ae32f 
 * sort objects - https://chatgpt.com/share/69b36eab-51bc-8009-a9a1-b8176302f0a7
 * stop return example from a list of StopIDs - https://chatgpt.com/share/69b36f8e-6d30-8009-beaa-c119f37c56fd
+* direct route search logic - https://chatgpt.com/share/69b39247-8d58-8009-afa5-ec64e90e4e3b
+* trasnfer route planning - https://chatgpt.com/share/69b3933f-06c0-8009-aa1b-a6db6df97121
 * 
