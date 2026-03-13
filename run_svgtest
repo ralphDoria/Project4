@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="11" failures="0" disabled="0" errors="0" time="0." timestamp="2026-02-18T05:09:28.818" name="AllTests">
-  <testsuite name="SVGTest" tests="11" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-02-18T05:09:28.819">
-    <testcase name="CreateAndDestroy" file="./testsrc/SVGTest.cpp" line="64" status="run" result="completed" time="0." timestamp="2026-02-18T05:09:28.819" classname="SVGTest" />
-    <testcase name="NullContextFunctions" file="./testsrc/SVGTest.cpp" line="75" status="run" result="completed" time="0." timestamp="2026-02-18T05:09:28.819" classname="SVGTest" />
-    <testcase name="Circle" file="./testsrc/SVGTest.cpp" line="97" status="run" result="completed" time="0." timestamp="2026-02-18T05:09:28.819" classname="SVGTest" />
-    <testcase name="Rectangle" file="./testsrc/SVGTest.cpp" line="122" status="run" result="completed" time="0." timestamp="2026-02-18T05:09:28.819" classname="SVGTest" />
-    <testcase name="Line" file="./testsrc/SVGTest.cpp" line="147" status="run" result="completed" time="0." timestamp="2026-02-18T05:09:28.819" classname="SVGTest" />
-    <testcase name="Grouping" file="./testsrc/SVGTest.cpp" line="171" status="run" result="completed" time="0." timestamp="2026-02-18T05:09:28.819" classname="SVGTest" />
-    <testcase name="ZeroDimensions" file="./testsrc/SVGTest.cpp" line="195" status="run" result="completed" time="0." timestamp="2026-02-18T05:09:28.819" classname="SVGTest" />
-    <testcase name="NullPointPointer" file="./testsrc/SVGTest.cpp" line="217" status="run" result="completed" time="0." timestamp="2026-02-18T05:09:28.819" classname="SVGTest" />
-    <testcase name="CreateEdgeCases" file="./testsrc/SVGTest.cpp" line="235" status="run" result="completed" time="0." timestamp="2026-02-18T05:09:28.819" classname="SVGTest" />
-    <testcase name="DestroyEdgeCases" file="./testsrc/SVGTest.cpp" line="251" status="run" result="completed" time="0." timestamp="2026-02-18T05:09:28.819" classname="SVGTest" />
-    <testcase name="IOErrorTest" file="./testsrc/SVGTest.cpp" line="269" status="run" result="completed" time="0." timestamp="2026-02-18T05:09:28.819" classname="SVGTest" />
+<testsuites tests="11" failures="0" disabled="0" errors="0" time="0." timestamp="2026-03-12T21:16:28.836" name="AllTests">
+  <testsuite name="SVGTest" tests="11" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-03-12T21:16:28.836">
+    <testcase name="CreateAndDestroy" file="./testsrc/SVGTest.cpp" line="64" status="run" result="completed" time="0." timestamp="2026-03-12T21:16:28.836" classname="SVGTest" />
+    <testcase name="NullContextFunctions" file="./testsrc/SVGTest.cpp" line="75" status="run" result="completed" time="0." timestamp="2026-03-12T21:16:28.836" classname="SVGTest" />
+    <testcase name="Circle" file="./testsrc/SVGTest.cpp" line="97" status="run" result="completed" time="0." timestamp="2026-03-12T21:16:28.836" classname="SVGTest" />
+    <testcase name="Rectangle" file="./testsrc/SVGTest.cpp" line="122" status="run" result="completed" time="0." timestamp="2026-03-12T21:16:28.836" classname="SVGTest" />
+    <testcase name="Line" file="./testsrc/SVGTest.cpp" line="147" status="run" result="completed" time="0." timestamp="2026-03-12T21:16:28.836" classname="SVGTest" />
+    <testcase name="Grouping" file="./testsrc/SVGTest.cpp" line="171" status="run" result="completed" time="0." timestamp="2026-03-12T21:16:28.836" classname="SVGTest" />
+    <testcase name="ZeroDimensions" file="./testsrc/SVGTest.cpp" line="195" status="run" result="completed" time="0." timestamp="2026-03-12T21:16:28.836" classname="SVGTest" />
+    <testcase name="NullPointPointer" file="./testsrc/SVGTest.cpp" line="217" status="run" result="completed" time="0." timestamp="2026-03-12T21:16:28.836" classname="SVGTest" />
+    <testcase name="CreateEdgeCases" file="./testsrc/SVGTest.cpp" line="235" status="run" result="completed" time="0." timestamp="2026-03-12T21:16:28.836" classname="SVGTest" />
+    <testcase name="DestroyEdgeCases" file="./testsrc/SVGTest.cpp" line="251" status="run" result="completed" time="0." timestamp="2026-03-12T21:16:28.836" classname="SVGTest" />
+    <testcase name="IOErrorTest" file="./testsrc/SVGTest.cpp" line="269" status="run" result="completed" time="0." timestamp="2026-03-12T21:16:28.836" classname="SVGTest" />
   </testsuite>
 </testsuites>

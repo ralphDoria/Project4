@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="13" failures="0" disabled="0" errors="0" time="0.007" timestamp="2026-03-12T22:09:05.943" name="AllTests">
+  <testsuite name="BusSystemIndexer" tests="13" failures="0" disabled="0" skipped="0" errors="0" time="0.007" timestamp="2026-03-12T22:09:05.943">
+    <testcase name="SimpleTest" file="testsrc/BusSystemIndexerTest.cpp" line="20" status="run" result="completed" time="0.003" timestamp="2026-03-12T22:09:05.943" classname="BusSystemIndexer" />
+    <testcase name="RouteByStop" file="testsrc/BusSystemIndexerTest.cpp" line="74" status="run" result="completed" time="0." timestamp="2026-03-12T22:09:05.946" classname="BusSystemIndexer" />
+    <testcase name="StopsByRoutes" file="testsrc/BusSystemIndexerTest.cpp" line="88" status="run" result="completed" time="0." timestamp="2026-03-12T22:09:05.947" classname="BusSystemIndexer" />
+    <testcase name="RouteByNameSuccess" file="testsrc/BusSystemIndexerTest.cpp" line="101" status="run" result="completed" time="0." timestamp="2026-03-12T22:09:05.947" classname="BusSystemIndexer" />
+    <testcase name="RouteIndexerFindStopIndex" file="testsrc/BusSystemIndexerTest.cpp" line="121" status="run" result="completed" time="0." timestamp="2026-03-12T22:09:05.947" classname="BusSystemIndexer" />
+    <testcase name="RouteIndexerFindStopIndexWithStart" file="testsrc/BusSystemIndexerTest.cpp" line="132" status="run" result="completed" time="0." timestamp="2026-03-12T22:09:05.948" classname="BusSystemIndexer" />
+    <testcase name="RouteIndexerStopIDsSourceDestinationForward" file="testsrc/BusSystemIndexerTest.cpp" line="144" status="run" result="completed" time="0." timestamp="2026-03-12T22:09:05.948" classname="BusSystemIndexer" />
+    <testcase name="RouteIndexerStopIDsSourceDestinationReverse" file="testsrc/BusSystemIndexerTest.cpp" line="164" status="run" result="completed" time="0." timestamp="2026-03-12T22:09:05.948" classname="BusSystemIndexer" />
+    <testcase name="RouteIndexerStopIDsSourceDestinationMissingStops" file="testsrc/BusSystemIndexerTest.cpp" line="180" status="run" result="completed" time="0." timestamp="2026-03-12T22:09:05.949" classname="BusSystemIndexer" />
+    <testcase name="RoutesByStopIDClearsOutputSet" file="testsrc/BusSystemIndexerTest.cpp" line="194" status="run" result="completed" time="0." timestamp="2026-03-12T22:09:05.949" classname="BusSystemIndexer" />
+    <testcase name="RoutesByStopIDsClearsOutputSetAndFindsIntersection" file="testsrc/BusSystemIndexerTest.cpp" line="208" status="run" result="completed" time="0." timestamp="2026-03-12T22:09:05.949" classname="BusSystemIndexer" />
+    <testcase name="StopIDsByRoutesClearsOutputSet" file="testsrc/BusSystemIndexerTest.cpp" line="222" status="run" result="completed" time="0." timestamp="2026-03-12T22:09:05.950" classname="BusSystemIndexer" />
+    <testcase name="StopIDsByRoutesSameRoute" file="testsrc/BusSystemIndexerTest.cpp" line="237" status="run" result="completed" time="0." timestamp="2026-03-12T22:09:05.950" classname="BusSystemIndexer" />
+  </testsuite>
+</testsuites>
