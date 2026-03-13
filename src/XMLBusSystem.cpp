@@ -36,6 +36,8 @@ struct CXMLBusSystem::SImplementation{
     const std::string DRouteNameAttr = "name";
     const std::string DRouteStopTag = "routestop";
     const std::string DRouteStopAttr = "stop";
+    const std::string DRouteScheduleAttr = "schedule";
+    const std::string DRouteDeltaAttr = "delta";
 
     const std::string DPathsTag = "paths";
     const std::string DPathTag = "path";
@@ -88,32 +90,45 @@ struct CXMLBusSystem::SImplementation{
     //stores route nanme and ordered list of stop ids
     //name, stopcount, getstopid by interface
     struct SRoute : public CBusSystem::SRoute{
-
         std::vector<TStopID> DStopIDs;
-
+        std::vector<TStopTime> DStartTimes;
+        std::vector<double> DStopDeltas;
         std::string DName;
-        explicit SRoute(const std::string &name) : DName(name){
+
+    explicit SRoute(const std::string &name) : DName(name){
+    }
+
+    ~SRoute() override = default;
+
+    std::string Name() const noexcept override{
+        return DName;
+    }
+
+    std::size_t StopCount() const noexcept override{
+        return DStopIDs.size();
+    }
+
+    TStopID GetStopID(std::size_t index) const noexcept override{
+        if(index >= DStopIDs.size()){
+            return CBusSystem::InvalidStopID;
         }
+        return DStopIDs[index];
+    }
 
-        ~SRoute() override = default;
+    std::size_t TripCount() const noexcept override{
+        return DStartTimes.size();
+    }
 
-        std::string Name() const noexcept override{
-            return DName;
+    TStopTime GetStopTime(std::size_t stopindex, std::size_t tripindex) const noexcept override{
+        if((tripindex >= DStartTimes.size()) || (stopindex >= DStopDeltas.size())){
+            return TStopTime();
         }
-
-        std::size_t StopCount() const noexcept override{
-            return DStopIDs.size();
-        }
-
-        TStopID GetStopID(std::size_t index) const noexcept override{
-            if(index >= DStopIDs.size()){
-                return InvalidStopID;
-            }
-            return DStopIDs[index];
-        }
-
-        
-    };
+        return TStopTime(
+            DStartTimes[tripindex].to_duration() +
+            std::chrono::minutes(static_cast<int>(DStopDeltas[stopindex]))
+        );
+    }
+};
 
 
     //path implementation
@@ -191,6 +206,34 @@ struct CXMLBusSystem::SImplementation{
         return str.substr(start, end - start);
     }
 
+    static TStopTime ParseStopTimeString(const std::string &str){
+        auto Clean = Trim(str);
+
+        std::size_t ColonPos = Clean.find(':');
+        std::size_t SpacePos = Clean.find(' ', ColonPos);
+
+        if(ColonPos == std::string::npos || SpacePos == std::string::npos){
+            return TStopTime();
+        }
+
+        int Hour = std::stoi(Clean.substr(0, ColonPos));
+        int Minute = std::stoi(Clean.substr(ColonPos + 1, SpacePos - ColonPos - 1));
+        std::string Suffix = Clean.substr(SpacePos + 1);
+
+        for(auto &Ch : Suffix){
+            Ch = std::toupper(static_cast<unsigned char>(Ch));
+        }
+
+        if(Suffix == "PM" && Hour != 12){
+            Hour += 12;
+        }
+        else if(Suffix == "AM" && Hour == 12){
+            Hour = 0;
+        }
+
+        return TStopTime(std::chrono::hours(Hour) + std::chrono::minutes(Minute));
+    }
+
 
     //storage containers to keep track of the objects
     std::vector<std::shared_ptr<SStop> > DStopsByIndex;
@@ -254,13 +297,44 @@ struct CXMLBusSystem::SImplementation{
 
     auto newRoute = std::make_shared<SRoute>(routeName);
 
+    std::string ScheduleStr = routeEntity.AttributeValue(DRouteScheduleAttr);
+    if(!ScheduleStr.empty()){
+        std::size_t Start = 0;
+        while(Start < ScheduleStr.size()){
+            std::size_t CommaPos = ScheduleStr.find(',', Start);
+            std::string TimeToken;
+
+            if(CommaPos == std::string::npos){
+                TimeToken = ScheduleStr.substr(Start);
+                Start = ScheduleStr.size();
+            }
+            else{
+                TimeToken = ScheduleStr.substr(Start, CommaPos - Start);
+                Start = CommaPos + 1;
+            }
+
+            TimeToken = Trim(TimeToken);
+            if(!TimeToken.empty()){
+                newRoute->DStartTimes.push_back(ParseStopTimeString(TimeToken));
+            }
+        }
+    }
+
     // Read elements inside <route> only care about <routestop stop="..."/>
     SXMLEntity tempEntity;
     while(systemsource->ReadEntity(tempEntity, true)){
         if(tempEntity.DType == SXMLEntity::EType::StartElement && tempEntity.DNameData == DRouteStopTag){
-            const std::string stopStr = tempEntity.AttributeValue(DRouteStopAttr);
-            if(!stopStr.empty()){
-                newRoute->DStopIDs.push_back(std::stoull(stopStr));
+            const std::string StopStr = tempEntity.AttributeValue(DRouteStopAttr);
+            if(!StopStr.empty()){
+                newRoute->DStopIDs.push_back(std::stoull(StopStr));
+            }
+
+            const std::string DeltaStr = tempEntity.AttributeValue(DRouteDeltaAttr);
+            if(!DeltaStr.empty()){
+                newRoute->DStopDeltas.push_back(std::stod(DeltaStr));
+            }
+            else{
+                newRoute->DStopDeltas.push_back(0.0);
             }
         }
         else if(tempEntity.DType == SXMLEntity::EType::EndElement && tempEntity.DNameData == DRouteTag){
@@ -268,8 +342,9 @@ struct CXMLBusSystem::SImplementation{
         }
     }
 
-    DRoutesByIndex.push_back(newRoute);
-    DRoutesByName[routeName] = newRoute;
+
+DRoutesByIndex.push_back(newRoute);
+DRoutesByName[routeName] = newRoute;
 
 }
 
