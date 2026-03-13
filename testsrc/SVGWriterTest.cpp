@@ -56,7 +56,7 @@ TEST(SVGWriterTest, RectangleTest){
         Style.push_back({"fill","none"});
         Style.push_back({"stroke","green"});
 
-        bool test = Writer.Rectange(TopLeft, Size, Style);
+        bool test = Writer.Rectangle(TopLeft, Size, Style);
         EXPECT_TRUE(test);
     }
 
