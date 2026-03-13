@@ -1,4 +1,4 @@
-# Project 1 README
+# Project 4 README
 
 
 ## Project Status
@@ -36,6 +36,11 @@ This the current status of the project is done.
 * parse forum - https://stackoverflow.com/questions/67174826/how-to-parse-the-xml-structure-data-in-cpp-while-going-and-accessing-each-node? 
 * use unodered map as custom class key - https://stackoverflow.com/questions/17016175/c-unordered-map-using-a-custom-class-type-as-the-key
 * hash function ex - https://stackoverflow.com/questions/20511347/a-good-hash-function-for-a-vector
+* gmock instructional - https://google.github.io/googletest/gmock_for_dummies.html
+* unordered map help  - https://en.cppreference.com/w/cpp/container/unordered_map.html
+* unordered set help - https://en.cppreference.com/w/cpp/container/unordered_set.html
+* sort algo - https://www.youtube.com/watch?v=7h1s2SojIRw
+* writing harder test fixtures - https://www.youtube.com/watch?v=nbFXI9SDfbk
 * 
 * 
 * 
@@ -52,4 +57,7 @@ This the current status of the project is done.
 * general parsing function help - https://chatgpt.com/share/699548d1-dd70-8008-808d-b7ae2a96bd07
 * xml attr - https://chatgpt.com/share/699548e6-7f60-8008-ae65-a22cac3aa57f
 * linker error fix - https://chatgpt.com/share/699548f0-bb08-8008-80aa-0fc0d6d2301b
+* which STL container to use - https://chatgpt.com/share/69b36dc8-278c-8009-96ee-cc4b492ae32f 
+* sort objects - https://chatgpt.com/share/69b36eab-51bc-8009-a9a1-b8176302f0a7
+* stop return example from a list of StopIDs - https://chatgpt.com/share/69b36f8e-6d30-8009-beaa-c119f37c56fd
 * 
