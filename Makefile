@@ -64,6 +64,11 @@ TEST_BSI_TEST_OBJ         = $(TESTOBJ_DIR)/BusSystemIndexerTest.o
 TEST_MOCKBUS_OBJ          = $(TESTOBJ_DIR)/MockBusSystem.o
 TEST_BSI_OBJ_FILES        = $(TEST_MOCKBUS_OBJ) $(TEST_BSI_OBJ) $(TEST_BSI_TEST_OBJ)
 
+TEST_SMI_OBJ              = $(TESTOBJ_DIR)/StreetMapIndexer.o
+TEST_SMI_TEST_OBJ         = $(TESTOBJ_DIR)/StreetMapIndexerTest.o
+TEST_MOCKSTREETMAP_OBJ    = $(TESTOBJ_DIR)/MockStreetMap.o
+TEST_SMI_OBJ_FILES        = $(TEST_MOCKSTREETMAP_OBJ) $(TEST_STREETMAP_OBJ) $(TEST_SMI_OBJ) $(TEST_SMI_TEST_OBJ)
+
 # Define the targets
 SVGLIB_TARGET			= $(LIB_DIR)/libsvg.a
 
@@ -74,6 +79,7 @@ TEST_SVGWRITER_TARGET   = $(TESTBIN_DIR)/testsvgwriter
 TEST_XMLBS_TARGET		= $(TESTBIN_DIR)/testxmlbs
 TEST_OSM_TARGET			= $(TESTBIN_DIR)/testosm
 TEST_BSI_TARGET         = $(TESTBIN_DIR)/testbsi
+TEST_SMI_TARGET         = $(TESTBIN_DIR)/teststreetmapindexer
 
 
 
@@ -87,6 +93,7 @@ all: 	directories 		\
 		run_osmtest			\
 		run_xmlbstest 		\
 		run_busindexertest  \
+		run_streetmapindexertest \
 		gen_html
 
 run_svgtest: $(TEST_SVG_TARGET)
@@ -114,6 +121,11 @@ run_xmlbstest: $(TEST_XMLBS_TARGET)
 run_busindexertest: $(TEST_BSI_TARGET)
 	$(TEST_BSI_TARGET) --gtest_output=xml:$(TESTTMP_DIR)/$@
 	mv $(TESTTMP_DIR)/$@ $@
+
+run_streetmapindexertest: $(TEST_SMI_TARGET)
+	$(TEST_SMI_TARGET) --gtest_output=xml:$(TESTTMP_DIR)/$@
+	mv $(TESTTMP_DIR)/$@ $@
+
 
 run_osmtest: $(TEST_OSM_TARGET)
 	$(TEST_OSM_TARGET) --gtest_output=xml:$(TESTTMP_DIR)/$@
@@ -144,6 +156,9 @@ $(TEST_XMLBS_TARGET): $(TEST_XMLBS_OBJ_FILES)
 
 $(TEST_BSI_TARGET): $(TEST_BSI_OBJ_FILES)
 	$(CXX) $(TEST_CFLAGS) $(TEST_CPPFLAGS) $(TEST_BSI_OBJ_FILES) $(TEST_LDFLAGS) -o $(TEST_BSI_TARGET)
+
+$(TEST_SMI_TARGET): $(TEST_SMI_OBJ_FILES)
+	$(CXX) $(TEST_CFLAGS) $(TEST_CPPFLAGS) $(TEST_SMI_OBJ_FILES) $(TEST_LDFLAGS) -o $(TEST_SMI_TARGET)
 
 $(TEST_OSM_TARGET): $(TEST_OSM_OBJ_FILES)
 	$(CXX) $(TEST_CFLAGS) $(TEST_CPPFLAGS) $(TEST_OSM_OBJ_FILES) $(TEST_LDFLAGS) -o $(TEST_OSM_TARGET)
